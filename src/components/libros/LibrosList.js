@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Text, View} from 'react-native';
+import {Text, View, ScrollView} from 'react-native';
 import Libros from './Libros';
 
 class LibrosList extends Component{
@@ -22,9 +22,9 @@ class LibrosList extends Component{
     }
     render(){
         return(
-            <View>
+            <ScrollView>
                 {this.mostrarLibros()}
-            </View>
+            </ScrollView>
         )
     }
     mostrarLibros(){
